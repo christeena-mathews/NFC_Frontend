@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React App</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>National Footwear Company – Wholesale Footwear</title>
+<style>
+:root{color-scheme:light;--bg:#fdf0e4;--card:#ffffff;--text:#1f1b16;--muted:#6b6258;--accent:#b4472b;--accent-text:#ffffff;--line:#e6dfd3;--hero:#2a1f17;--hero-text:#faf7f2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+h1,h2,h3,nav,.btn,.tag{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--hero);color:var(--hero-text)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+nav b{font-size:1.05rem;letter-spacing:.04em}
+nav a{color:var(--hero-text);text-decoration:none;margin-left:16px;font-size:.9rem;opacity:.85}
+.hero{padding:56px 0 64px}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:0 0 14px}
+.hero p{max-width:560px;color:var(--hero-text);opacity:.85;font-size:1.1rem;margin:0 0 26px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin:0 10px 10px 0}
+.btn.alt{background:transparent;border:1.5px solid currentColor;color:inherit}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;border:2px dashed var(--line);border-radius:10px;background:repeating-linear-gradient(45deg,transparent 0 10px,rgba(180,71,43,.06) 10px 20px);color:var(--muted);font:600 .8rem system-ui,sans-serif;letter-spacing:.04em;padding:8px}
+.ph.tile{height:120px;margin-bottom:14px}
+.ph.sm{height:90px;margin-bottom:12px}
+.ph.hero-img{height:260px;border-color:rgba(250,247,242,.4);color:var(--hero-text);opacity:.8}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+@media(max-width:720px){.hero-grid{grid-template-columns:1fr}}
+section{padding:48px 0}
+h2{font-size:1.6rem;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-weight:700}
+.alt-bg{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+ol{padding-left:20px;margin:0}
+ol li{margin-bottom:8px}
+.contact-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.contact-box p{margin:0 0 10px}
+footer{padding:24px 0;text-align:center;color:var(--muted);font-size:.85rem;font-family:system-ui,sans-serif}
+</style>
 </head>
 <body>
-    <div id="root"></div>
+<header>
+  <div class="wrap">
+    <nav>
+      <b>NATIONAL FOOTWEAR CO.</b>
+      <div><a href="#range">Range</a><a href="#brands">Brands</a><a href="#why">Why us</a><a href="#order">How to order</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero hero-grid">
+      <div>
+      <h1>Quality footwear, supplied in bulk.</h1>
+      <p>National Footwear Company supplies retailers and resellers with reliable, fairly priced footwear for men, women and kids.</p>
+      <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20wholesale%20rates" target="_blank" rel="noopener">WhatsApp for rates</a>
+      <a class="btn alt" href="#contact">Contact us</a>
+      </div>
+      <div class="ph hero-img" href="https://www.justdial.com/Ashoknagar/Shoe-Dealers/nct-10433615"></div>
+    </div>
+  </div>
+</header>
+
+<section id="range">
+  <div class="wrap">
+    <h2>Our range</h2>
+    <p class="sub">Footwear for every customer in your shop.</p>
+    <div class="grid">
+      <div class="card"><div class="ph tile">Photo: Men</div><span class="tag">Men</span><h3>Formal &amp; Casual</h3><p>Shoes, loafers and everyday wear in standard size runs.</p></div>
+      <div class="card"><div class="ph tile">Photo: Women</div><span class="tag">Women</span><h3>Sandals &amp; Flats</h3><p>Comfortable, trend-aware styles for daily use.</p></div>
+      <div class="card"><div class="ph tile">Photo: Kids</div><span class="tag">Kids</span><h3>School &amp; Play</h3><p>Durable footwear for school and everyday wear.</p></div>
+      <div class="card"><div class="ph tile">Photo: Everyday</div><span class="tag">Everyday</span><h3>Slippers &amp; Flip-flops</h3><p>High-volume, fast-moving essentials.</p></div>
+      <div class="card"><div class="ph tile">Photo: Sports</div><span class="tag">Sports</span><h3>Sports &amp; Sneakers</h3><p>Lightweight shoes for walking and running.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="brands">
+  <div class="wrap">
+    <h2>Sandal brands available</h2>
+    <p class="sub">Sandals we supply in wholesale. Message us on WhatsApp for the latest designs and rates.</p>
+    <div class="grid">
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Walkaroo</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>VKC Pride</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Calcat</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Stylo</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Odyssia</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Nexo</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Hawalker</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Cubix</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Feoro</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Orange</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Catta</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Mark</h3></div>
+      <div class="card"><div class="ph sm">Brand photo</div><span class="tag">Sandals</span><h3>Stecon</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="alt-bg">
+  <div class="wrap">
+    <h2>Why retailers choose us</h2>
+    <p class="sub">Add your real numbers and strengths here.</p>
+    <div class="grid">
+      <div class="card"><div class="ph sm">Photo</div><h3>Wholesale pricing</h3><p>Clear rates that leave you a healthy margin.</p></div>
+      <div class="card"><div class="ph sm">Photo</div><h3>Low minimum orders</h3><p>Start with a small assorted lot and scale up.</p></div>
+      <div class="card"><div class="ph sm">Photo</div><h3>Reliable supply</h3><p>Regular stock and on-time dispatch.</p></div>
+      <div class="card"><div class="ph sm">Photo</div><h3>Quality checked</h3><p>Every lot inspected before it ships.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <h2>How to order</h2>
+    <p class="sub">Simple, in three steps.</p>
+    <ol>
+      <li>Message us on WhatsApp or call to get the latest catalogue and rates.</li>
+      <li>Choose your styles, sizes and quantities, and confirm the order.</li>
+      <li>Pay as agreed and we dispatch to your shop.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="alt-bg">
+  <div class="wrap">
+    <h2>Contact us</h2>
+    <p class="sub">Visit the shop or get in touch directly.</p>
+    <div class="contact-box">
+      <div>
+        <p><b>National Footwear Company</b></p>
+        <p>[Shop address, City, State, PIN]</p>
+        <p>Hours: [Mon–Sat, 10:00 am – 8:00 pm]</p>
+      </div>
+      <div>
+        <p>Phone: <a href="tel:+91XXXXXXXXXX" style="color:var(--accent)">+91 XXXXX XXXXX</a></p>
+        <p>Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
+        <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© National Footwear Company. All rights reserved.</footer>
 </body>
 </html>
